@@ -203,7 +203,7 @@ def app():
         # =============================================================================
         # Plotting the bar chart with actual vs 'perfect' scores
         # =============================================================================
-        boxscores=pd.read_excel(f'https://raw.githubusercontent.com/kseymour1996/Fantasy-Football/master/Data/weeklymatchups.csv')
+        boxscores=pd.read_csv(f'https://raw.githubusercontent.com/kseymour1996/Fantasy-Football/master/Data/weeklymatchups.csv')
         ##### need to get this for each individual year. right now it is only basing it off of 2021.
         ##### also need to rerun when the season is over to get all the weeks data.
         weeks=[1,2,3,4,5,6,7,8,9,10,11,12,13]
