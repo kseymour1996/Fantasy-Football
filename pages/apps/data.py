@@ -195,7 +195,7 @@ def app():
 # =============================================================================
 #         Inserting the schedule matrix
 # ============================================================================
-        x=pd.read_excel(f'https://raw.githubusercontent.com/kseymour1996/Fantasy-Football/master/Data/ScheduleMatrix{selected_year}.csv')
+        x=pd.read_csv(f'https://raw.githubusercontent.com/kseymour1996/Fantasy-Football/master/Data/ScheduleMatrix{selected_year}.csv')
         x=x.rename(columns={'Unnamed: 0':'Index'})
         x=x.set_index('Index')
     
