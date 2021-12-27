@@ -247,7 +247,7 @@ def app():
         bar_chart=px.bar(df7,x='Week',y=['Actual','Perfect','Opponent'],title='Actual Points vs Hypothetical Points vs Opponent Points')
         bar_chart.update_layout(barmode='group')
         bar_chart.update_layout(yaxis_range=[0,200])
-        st.plotly_chart(bar_chart)
+        st.plotly_chart(bar_chart,use_container_width=True)
         st.write('"Vs. Other Schedules". Read Left to Right.')
         st.dataframe(x)
         # st.bar_chart(df5)
